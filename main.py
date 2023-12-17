@@ -9,3 +9,12 @@ answer = 0
 
 def add(inputNum):
     answer += inputNum
+
+def subtract(inputNum):
+    answer -= inputNum
+
+def multiply(inputNum):
+    answer *= inputNum
+
+def divide(inputNum):
+    answer /= inputNum
