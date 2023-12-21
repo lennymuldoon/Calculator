@@ -20,9 +20,12 @@ def multiply(inputNum, currentNum):
 def divide(inputNum, currentNum):
     return currentNum / inputNum
 
+def exponent(inputNum, currentNum):
+    return currentNum ** inputNum
+
 
 while not quit:
-    choice = int(input("What operation would you like to do? 1 for addition 2 for subtraction 3 for multiplication 4 for division 5 for quit"))
+    choice = int(input("What operation would you like to do? 1 for addition 2 for subtraction 3 for multiplication 4 for division 5 for exponent any other number for quit"))
     if choice == 1:
         print("Total is currently", answer)
         inputNum = int(input("What number would you like to add to your total?"))
@@ -42,6 +45,11 @@ while not quit:
         print("Total is currently", answer)
         inputNum = int(input("What number would you like to divide to your total?"))
         answer = divide(inputNum, answer)
+        print("New total is", answer)
+    elif choice == 5:
+        print("Total is currently", answer)
+        inputNum = int(input("What number would you like to use as an exponent for your total?"))
+        answer = exponent(inputNum, answer)
         print("New total is", answer)
     else:
         quit = True
