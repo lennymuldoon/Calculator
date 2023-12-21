@@ -28,5 +28,20 @@ while not quit:
         inputNum = int(input("What number would you like to add to your total?"))
         answer = add(inputNum, answer)
         print("New total is", answer)
+    elif choice == 2:
+        print("Total is currently", answer)
+        inputNum = int(input("What number would you like to subtract to your total?"))
+        answer = subtract(inputNum, answer)
+        print("New total is", answer)
+    elif choice == 3:
+        print("Total is currently", answer)
+        inputNum = int(input("What number would you like to multiply to your total?"))
+        answer = multiply(inputNum, answer)
+        print("New total is", answer)
+    elif choice == 4:
+        print("Total is currently", answer)
+        inputNum = int(input("What number would you like to divide to your total?"))
+        answer = divide(inputNum, answer)
+        print("New total is", answer)
     else:
         quit = True
