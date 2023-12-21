@@ -8,21 +8,27 @@ import math
 answer = 0
 quit = False
 
+#adds a number to answer
 def add(inputNum, currentNum):
     return currentNum + inputNum
 
+#subtracts a number to answer
 def subtract(inputNum, currentNum):
     return currentNum - inputNum
 
+#multiplys a number to answer
 def multiply(inputNum, currentNum):
     return currentNum * inputNum
 
+#divides a number to answer
 def divide(inputNum, currentNum):
     return currentNum / inputNum
 
+#puts answer to the power of inputNum
 def exponent(inputNum, currentNum):
     return currentNum ** inputNum
 
+#inputNum roots answer
 def root(inputNum, currentNum):
     return currentNum ** (1 / inputNum)
 
